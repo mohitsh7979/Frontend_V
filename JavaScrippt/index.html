@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  
+  </head>
+  <body id="bo">
+    
+    <h1 id="a">This is my heading tag</h1>
+    <button id="show">Show</button>
+    <button id="hide">Hide</button>
+    <button id="red">Red</button>
+    <button id="yellow">yellow</button>
+    <button id="plus">+</button>
+    <button id="minus">-</button>
+    
+    <input type="color">
+
+
+    <script>
+      document.getElementById("show").onclick = function () {
+        document.getElementById("a").style.display = "block"
+      };
+
+      document.getElementById("hide").onclick = function () {
+        document.getElementById("a").style.display = "none"
+      };
+
+      let counter = 34;
+      
+      document.getElementById("plus").onclick = function(){
+          
+          counter++;
+          document.getElementById("a").style.fontSize = counter+"px"
+      }
+
+      document.getElementById("minus").onclick = function(){
+        
+        counter--;
+        document.getElementById("a").style.fontSize = counter+"px"
+    }
+
+
+    document.getElementById("red").onclick = function(){
+
+        document.getElementById("a").style.color = "red";
+        document.getElementById("bo").style.backgroundColor = "black"
+    }
+    
+
+  
+    </script>
+  </body>
+</html>
