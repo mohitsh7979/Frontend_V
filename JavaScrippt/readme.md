@@ -6,3 +6,5 @@ loops --> do-while , while loop , for loops
 functions --> nameing function , anoynamous function , arrow function
 clousers , callback functions  
 dom -- > document.getElementById();
+         document.getElementByClassName();
+     

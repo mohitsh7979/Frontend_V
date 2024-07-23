@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+    
+
+      .container {
+        width: 50%;
+        margin: auto;
+        margin-top: 2rem;
+        box-shadow: 0px 0px 10px rgb(205, 204, 204);
+        padding: 20px;
+      }
+
+      input{
+
+         width: 40%;
+         padding: 10px;
+      }
+
+      .outer-box{
+
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+      }
+
+
+      .inner-box{
+
+        height: 130px;
+        width: 200px;
+        border: 2px solid black;
+        flex-grow: 1;
+        margin: 3px;
+      
+      }
+
+
+      button{
+
+        padding: 10px 8px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="input">
+            <input type="text" placeholder="Enter Your color" id="color">
+            <input type="text" placeholder="Enter Your div" id="div">
+            <button>Submit</button>
+        </div>
+        <div class="outer-box">
+          <div class="inner-box" id="1"></div>
+          <div class="inner-box" id="2"></div>
+          <div class="inner-box" id="3"></div>
+          <div class="inner-box" id="4"></div>
+          <div class="inner-box" id="5"></div>
+          <div class="inner-box" id="6"></div>
+          <div class="inner-box" id="7"></div>
+          <div class="inner-box" id="8"></div>
+          <div class="inner-box" id="9"></div>
+        </div>
+    </div>
+
+    <script>
+      
+      document.querySelector("button").onclick = function(){
+
+        let color = document.querySelector("#color").value;
+        let div = document.querySelector("#div").value;
+        document.querySelector("#color").value = ''
+        document.querySelector("#div").value = ''
+
+        let all_div = document.querySelectorAll(".inner-box");
+    
+        for(let i of all_div){
+            
+            if(i.id==div){
+                
+                i.style.backgroundColor = color;
+            }
+        }
+        
+      }
+
+    </script>
+
+
+  </body>
+</html>
