@@ -9,44 +9,54 @@
   <body id="bo">
     
     <h1 id="a">This is my heading tag</h1>
-    <button id="show">Show</button>
+    <input type="range">
+    <!-- <button id="show">Show</button>
     <button id="hide">Hide</button>
     <button id="red">Red</button>
     <button id="yellow">yellow</button>
     <button id="plus">+</button>
-    <button id="minus">-</button>
+    <button id="minus">-</button> -->
     
-    <input type="color">
+    <input type="color" id="color">
 
 
     <script>
-      document.getElementById("show").onclick = function () {
-        document.getElementById("a").style.display = "block"
-      };
+    //   document.getElementById("show").onclick = function () {
+    //     document.getElementById("a").style.display = "block"
+    //   };
 
-      document.getElementById("hide").onclick = function () {
-        document.getElementById("a").style.display = "none"
-      };
+    //   document.getElementById("hide").onclick = function () {
+    //     document.getElementById("a").style.display = "none"
+    //   };
 
-      let counter = 34;
+    //   let counter = 34;
       
-      document.getElementById("plus").onclick = function(){
+    //   document.getElementById("plus").onclick = function(){
           
-          counter++;
-          document.getElementById("a").style.fontSize = counter+"px"
-      }
+    //       counter++;
+    //       document.getElementById("a").style.fontSize = counter+"px"
+    //   }
 
-      document.getElementById("minus").onclick = function(){
+    //   document.getElementById("minus").onclick = function(){
         
-        counter--;
-        document.getElementById("a").style.fontSize = counter+"px"
-    }
+    //     counter--;
+    //     document.getElementById("a").style.fontSize = counter+"px"
+    // }
 
 
-    document.getElementById("red").onclick = function(){
+    // document.getElementById("red").onclick = function(){
 
-        document.getElementById("a").style.color = "red";
-        document.getElementById("bo").style.backgroundColor = "black"
+    //     document.getElementById("a").style.color = "red";
+    //     document.getElementById("bo").style.backgroundColor = "black"
+    // }
+
+    document.getElementById("color").oninput = function(){
+ 
+      let val = document.getElementById("color").value;
+      console.log(val)
+
+      document.body.style.backgroundColor = val
+
     }
     
 
