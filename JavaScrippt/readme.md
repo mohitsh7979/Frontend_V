@@ -7,4 +7,10 @@ functions --> nameing function , anoynamous function , arrow function
 clousers , callback functions  
 dom -- > document.getElementById();
          document.getElementByClassName();
+         document.queryselector();
+         document.queryselectorAll();
+
+array and methods  
+
+         
      

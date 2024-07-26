@@ -70,22 +70,20 @@
     <script>
       
       document.querySelector("button").onclick = function(){
-
+        
         let color = document.querySelector("#color").value;
         let div = document.querySelector("#div").value;
-        document.querySelector("#color").value = ''
-        document.querySelector("#div").value = ''
 
         let all_div = document.querySelectorAll(".inner-box");
-    
+       
         for(let i of all_div){
-            
-            if(i.id==div){
-                
-                i.style.backgroundColor = color;
-            }
+
+          if(i.id==div){
+
+             i.style.backgroundColor = color;
+          }
         }
-        
+         
       }
 
     </script>
