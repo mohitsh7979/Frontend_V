@@ -1,57 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <button>Start</button>
     <button>Reset</button>
     <button>Pause</button>
 
-
     <script>
-    
+      //   let a = [10,20,30,40,50,60,70,80,90,100];
+
+      //   for(let i in a){
+      //     console.log(a[i])
+      //   }
+
+      // a.forEach((item)=>{
+      //     console.log(item)
+      // })
+
+      // Array methods
+      // push it can be insert new value from last indexing
+      // pop
+      // unshift it can be insert new value from starting indexing
+      // shift
+      // slice
+      // splice
+      // map
+      // filter
+      // reduce
+      // flat 
+      // split
+      // join
+
+      // let a = [10,20,30,40,50,60,70,80,90,100];
+      // a.push("aman");
+      // a.push("ajay");
+      // a.pop();
+      // a.pop();
+      // a.unshift(5000);
+      // a.unshift("ajay")
+      // a.shift();
+      // a.shift();
+      // console.log(a)
+
+      // setInterval(()=>{
+      //     document.write("Hello")
+      // },3000)
+
+      // stopwatch
+
+      // let a = [10,20,30,40,50,60,70,80,90,100];
+      // console.log(a.slice(0,-1))
+
+      // let a = [10,20,30,40,50,60,70,80,90,100];
+      // a.splice(-4,4)
+
     //   let a = [10,20,30,40,50,60,70,80,90,100];
-      
-    //   for(let i in a){
-    //     console.log(a[i])
-    //   }
 
-    // a.forEach((item)=>{
-    //     console.log(item)
-    // })
+    //   let b = a.map((item,i)=>{
 
-    // Array methods
-    // push it can be insert new value from last indexing
-    // pop 
-    // unshift it can be insert new value from starting indexing
-    // shift
+    //       return item>50;
+    //     console.log(item,i)
+    //   })
+    //   console.log(a)
+    //   console.log(b)
 
-    // let a = [10,20,30,40,50,60,70,80,90,100];
-    // a.push("aman");
-    // a.push("ajay");
-    // a.pop();
-    // a.pop();
-    // a.unshift(5000);
-    // a.unshift("ajay")
-    // a.shift();
-    // a.shift();
-    // console.log(a)
+    //   let a = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+    //   let b = a.filter((item) => {
+    //     return item > 50;
+    //   });
+    //   console.log(a);
+
+    // ["aman","mohit","akshay","rohan","mohan"]
+
+    //    let a = [1,2,3,4,5];
+    //    let b = a.reduce((x,y)=>{
+    //         return x+y;
+    //    }) 
+    //   console.log(b);
 
 
-    // setInterval(()=>{
-    //     document.write("Hello")
-    // },3000)
+//    let a =  ["aman","mohit","akshay","rohan","mohan"];
+
+//    let b = a.filter((item)=>item[0] == "m")
+
+//    console.log(b)
 
 
-    // stopwatch
+    // let a = "10,20,30,40,50,60,70";
 
+    // let b = a.split(",");
+    // console.log(b)
+    // let c = b.join();
+    // console.log(c)
 
+    // let d = [10,20,30,[1.5,['aman',[true,false],'ankit'],2.5,3.5],40,50,60,70,[1,2,3,4,5],80,90,100];
+    // console.log(d[3][1][1][1])
+
+    let y = [10,20,[1.5,['aman','ankit','anu'],2.5,3.5,4.5],30,40,50];
+    console.log(y.flat(2))
+    
+
+    
 
     </script>
-    
-</body>
+  </body>
 </html>
