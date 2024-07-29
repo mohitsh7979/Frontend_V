@@ -10,7 +10,11 @@ dom -- > document.getElementById();
          document.queryselector();
          document.queryselectorAll();
 
-array and methods  
+array and methods
+array destructing  
+string methods 
+objects 
+objects desrtucting
 
          
      
